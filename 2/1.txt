@@ -1,0 +1,38 @@
+[{"Name": "exam",
+	"condition":{"come_exam": "",
+			   "execute":
+					{"come_exam": "Пришел на зачет?"}
+			  }
+	},
+{"Name": "teach",
+	"condition":
+			{"come_exam": "Да",
+			"teach": "",
+			"execute":
+					{"teach": "Учил?"}
+			}
+	},
+{"Name": "ready",
+	"condition":
+			{"come_exam": "Да",
+			"teach": "Да",
+			"execute":
+					{"result": "Зачет"}
+			}
+	},
+{"Name": "notready",
+	"condition":
+			{"come_exam": "Да",
+			"teach": "Нет",
+			"execute":
+					{"result": "Незачет"}
+			}
+	},
+{"Name": "notexam",
+	"condition":
+			{"come_exam": "Нет",
+			"execute":
+					{"result": "Незачет"}
+			}
+	}
+]
